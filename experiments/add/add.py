@@ -1,5 +1,6 @@
 from collections import namedtuple
 
+import sys
 import numpy as np
 import tensorflow as tf
 
@@ -9,7 +10,7 @@ from experiments.data import load_data, DatasetBatcher
 # logging.basicConfig(level=logging.DEBUG)
 
 
-np.set_printoptions(linewidth=20000, precision=2, suppress=True, threshold=np.nan)
+np.set_printoptions(linewidth=20000, precision=2, suppress=True, threshold=sys.maxsize)
 
 # num_steps = seq_length * 6 + 6
 # stack_size = seq_length * 2 + 10
